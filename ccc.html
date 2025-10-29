@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ورود به حساب | سنگ‌بری برشکوه</title>
+  <style>
+
+    body {
+      margin: 0;
+      font-family: "Vazirmatn", sans-serif;
+      background: linear-gradient(135deg, #222, #555);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-box {
+      background-color: #fffef9;
+      padding: 40px 50px;
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+      width: 380px;
+      text-align: center;
+      border-top: 5px solid #fdd835;
+      animation: fadeIn 0.8s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .login-box h2 {
+      margin-bottom: 30px;
+      color: #222;
+      font-weight: 700;
+      font-size: 26px;
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+      text-align: right;
+    }
+
+    .input-group label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 15px;
+      transition: 0.3s;
+    }
+
+    .input-group input:focus {
+      border-color: #fdd835;
+      outline: none;
+      box-shadow: 0 0 6px rgba(253, 216, 53, 0.6);
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px 0;
+      background-color: #fdd835;
+      color: #222;
+      border: none;
+      border-radius: 8px;
+      font-size: 17px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #222;
+      color: #fdd835;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    }
+
+    .links {
+      margin-top: 20px;
+      font-size: 14px;
+    }
+
+    .links a {
+      color: #fdd835;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .links a:hover {
+      color: #222;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="login-box">
+    <h2>ورود به حساب کاربری</h2>
+    <form action="#" method="post">
+      <div class="input-group">
+        <label for="username">نام کاربری</label>
+        <input type="text" id="username" name="username" placeholder="نام کاربری خود را وارد کنید" required>
+      </div>
+
+      <div class="input-group">
+        <label for="password">رمز عبور</label>
+        <input type="password" id="password" name="password" placeholder="رمز عبور خود را وارد کنید" required>
+      </div>
+
+      <button type="submit" class="btn">ورود</button>
+    </form>
+
+    <div class="links">
+      <p>هنوز حساب کاربری ندارید؟ <a href="#">ثبت‌نام کنید</a></p>
+      <p><a href="index.html">بازگشت به صفحه اصلی</a></p>
+    </div>
+  </div>
+
+</body>
+</html>
