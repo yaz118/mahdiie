@@ -13,6 +13,62 @@
             box-shadow: 0 4px 10px rgba(0,0,0,0.3);
             letter-spacing: 1px;
         }
+        .header h1 {
+            margin: 0;
+            font-size: 46px;
+            font-weight: 700;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+        }
+
+        .header p {
+            margin-top: 15px;
+            font-size: 18px;
+            color: #f0f0f0;
+            opacity: 0.9;
+        }
+
+        .menu {
+            background-color: #111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 14px 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .menu a {
+            color: #f5f5f5;
+            text-decoration: none;
+            margin: 0 25px;
+            font-weight: 600;
+            font-size: 18px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+
+        .menu a::after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            right: 0;
+            width: 0%;
+            height: 3px;
+            background-color: #fdd835;
+            transition: width 0.3s;
+            border-radius: 5px;
+        }
+
+        .menu a:hover {
+            color: #fdd835;
+            transform: scale(1.15);
+        }
+
+        .menu a:hover::after {
+            width: 100%;
+        }
                 .footer {
             background: linear-gradient(135deg, #222, #444);
             color: #fdd835;
@@ -28,6 +84,13 @@
       <div class="header">
         <h1>سنگ‌بری برشکوه</h1>
         <p>زیبایی ماندگار، از دل طبیعت تا نمای خانه شما ✨</p>
+    </div>
+    <div class="menu">
+        <a href="index.html">صفحه اصلی</a>
+        <a href="#">محصولات</a>..
+        <a href="bbb.html">درباره ما</a>
+        <a href="#">تماس با ما</a>
+         <a href="ccc.html">ورود</a>
     </div>
     <h2 style="font-size: 65px;text-align: center;color: rgb(32, 32, 88);">درباره ما</h2>
 
